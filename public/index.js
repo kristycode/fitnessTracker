@@ -1,9 +1,3 @@
-const mongoose = require("mongoose");
-
-const Workout = require("./workout");
-const Resistance = require("./resistance");
-const Cardio = require("./cardio");
-
 init();
 
 async function init() {
@@ -16,4 +10,3 @@ async function init() {
     }
   }
 }
-

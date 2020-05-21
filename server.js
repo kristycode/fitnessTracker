@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 
 const PORT = process.env.PORT || 3000;
-
 const app = express();
 
 app.use(logger("dev"));
@@ -16,8 +15,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-app.use(require("./routes/apiRoutes"));
-app.use(require("./routes/htmlRoutes"));
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 app.listen(PORT, () => {
   console.log(`Fitness tracker is live on port ${PORT}!`);
