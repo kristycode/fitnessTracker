@@ -1,4 +1,8 @@
-// get all workout data from back-end
+const mongoose = require("mongoose");
+
+const Workout = require("./workout");
+const Resistance = require("./resistance");
+const Cardio = require("./cardio");
 
 fetch("/api/workouts/range")
   .then(response => {

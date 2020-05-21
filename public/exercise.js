@@ -14,6 +14,12 @@ const addButton = document.querySelector("button.add-another");
 const toast = document.querySelector("#toast");
 const newWorkout = document.querySelector(".new-workout")
 
+const mongoose = require("mongoose");
+
+const Workout = require("./workout");
+const Resistance = require("./resistance");
+const Cardio = require("./cardio");
+
 let workoutType = null;
 let shouldNavigateAway = false;
 
