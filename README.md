@@ -20,3 +20,6 @@ A consumer will reach their fitness goals quicker when they track their workout 
 
 # Future Development
 - Want to remove properties that have any values that are 'null' or 'NaN' or 'undefined' from appearing at all on front of the tracker
+
+# Heroku Deployment
+- https://polar-peak-69727.herokuapp.com/
