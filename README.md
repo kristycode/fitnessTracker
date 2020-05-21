@@ -15,6 +15,8 @@ A consumer will reach their fitness goals quicker when they track their workout 
 - Each exercise should have its name, type, weight, sets, reps and duration (cardio should track distance traveled)
 - Should be deployed to Heroku
 
-# Technologies Needed to Function and Meet Project Criteria
-- Should use a Mongoose schema to create a Mongo database
-- Should have routes handled by Express
+# Technologies Used
+- MongoDB/Mongoose, Express.js, Bootstrap
+
+# Future Development
+- Want to remove properties that have any values that are 'null' or 'NaN' or 'undefined' from appearing at all on front of the tracker
